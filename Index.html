@@ -1,0 +1,30 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Productos</title>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Catálogo de Productos</h1>
+        <select id="categoryFilter">
+            <option value="">Todos</option>
+        </select>
+        <div id="productGrid" class="product-grid"></div>
+    </div>
+
+    <!-- Modal para mostrar imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
